@@ -51,7 +51,7 @@ class Socket_Personalizado:
 
     def ssl_server(self):
         service = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        service.bind(('0.0.0.0', 4444))#Change this for the port "0.0.0.0" is public ip and private ip
+        service.bind(('0.0.0.0', 4444))#Change this for the port "0.0.0.0" is public ip, "127.0.0.1" is localhost
         service.listen(30)
         print("Waiting for secure connections... (Ctrl+C to stop)")
 
